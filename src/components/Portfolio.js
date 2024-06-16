@@ -14,11 +14,9 @@ const Portfolio = () => {
                     <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">                            
                         <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3 min-h-max">
                             <div className="m-2 text-justify text-sm">
-                                <h4 className="font-semibold my-4 text-lg md:text-2xl text-center mb-4 h-12">Business Management System</h4>
+                                <h4 className="font-semibold my-4 text-lg md:text-2xl text-center mb-4 h-12">Personalized AI Conversation System</h4>
                                 <p className="text-md font-medium leading-5 h-auto md:h-48">
-                                    Our Business Management System is a robust and easily scalable system that streamlines business operations, increase efficiency, and ultimately drive growth and profitability for your business.
-                                    With features such as employee management, finance control, and many more modules to effectively manage all aspects of a business.
-                                    All data is stored in the cloud and as such it is easily accessible from all devices and from any location.
+                                Our Personalized AI Conversation System is designed to emulate the unique communication style of your loved ones. By integrating advanced AI with your cherished messages, we create a lifelike and comforting experience that helps you stay connected with those who have passed or whom you’ve lost contact with. This service ensures that memories remain vivid and interactions feel genuine, providing emotional solace and continuity.
                                 </p>
                                 <div className="flex justify-center my-4">
                                     <Link to="/get-demo" className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-xl">
@@ -31,12 +29,9 @@ const Portfolio = () => {
 
                         <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
                             <div className="m-2 text-justify text-sm">
-                                <h4 className="font-semibold my-4 text-lg md:text-2xl text-center mb-4 h-12">School Management Portal</h4>
+                                <h4 className="font-semibold my-4 text-lg md:text-2xl text-center mb-4 h-12">Memory Preservation Platform</h4>
                                 <p className="text-md font-medium leading-5 h-auto md:h-48">
-                                    Our all encompassing School Management Portal is the only solution needed for any institution.
-                                    The School Management Portal (SMP) is a tool that can help educational institutions of all kinds manage their administrative tasks, automate processes, and streamline communication between teachers, students, parents, and administrators. 
-                                    The software can be used to manage all aspects of school operations, including student enrollment, attendance, grades, schedules, and more.
-                                </p>
+                                Our Memory Preservation Platform offers a comprehensive solution for storing and organizing your precious memories. From text messages and emails to photos and voice notes, all your data is securely stored in the cloud. This platform allows you to easily access and revisit your memories anytime, from any device, ensuring that the essence of your loved ones is always within reach.                                </p>
                                 <div className="flex justify-center my-4">
                                     <Link to="/get-demo" className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-xl">
                                         Schedule Demo
@@ -59,10 +54,9 @@ const Portfolio = () => {
 
                         <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
                             <div className="m-2 text-justify text-sm">
-                            <h4 className="font-semibold my-4 text-lg md:text-2xl text-center mb-4 h-12">Payroll Management System</h4>
+                            <h4 className="font-semibold my-4 text-lg md:text-2xl text-center mb-4 h-12">Conversational AI Fine-Tuning Service</h4>
                                 <p className="text-md font-medium leading-5 h-auto md:h-48">
-                                    The Payroll Management System automates the process of employee payments for businesses and organizations of different sizes. It helps to ensure that your employees get paid accurately and on time, while also reducing the time and effort required to manage payroll manually, with this system in place, you enjoy benefits such as: 
-                                    increased accuracy in employee payments. It can also integrate into an existing management system through well-structured APIs.
+                                Our Conversational AI Fine-Tuning Service customizes the AI based on your specific needs. By utilizing messages, emails, and other personal communications, we fine-tune our AI to perfectly mirror the conversational style of your loved ones. This tailored approach ensures the most authentic and meaningful interactions, providing a deeply personalized experience.
                                 </p>
                                 <div className="flex justify-center my-4">
                                     <Link to="/get-demo" className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-xl">
@@ -75,10 +69,9 @@ const Portfolio = () => {
 
                         <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:scale-105 rounded-lg shadow-2xl p-3">
                             <div className="m-2 text-justify text-sm">
-                                <h4 className="font-semibold my-4 text-lg md:text-2xl text-center mb-4 h-12">Event Management System</h4>
+                                <h4 className="font-semibold my-4 text-lg md:text-2xl text-center mb-4 h-12">Customized Emotional Support Solutions</h4>
                                 <p className="text-md font-medium leading-5 h-auto md:h-48">
-                                    Our event management system helps to manage different types of events, whether weddings, burials or any kind of event. With an easily customizable menu, you get to define your user experience and make your event fully customizable and memorable.
-                                    With use cases already recorded for quite a number of events, we can assure you of a stress-less event mangement platform.
+                                Our Customized Emotional Support Solutions provide personalized assistance to help you navigate the emotional complexities of loss and reconnection. Whether you need someone to talk to, or strategies for coping with grief, our AI-driven solutions are designed to offer comfort, understanding, and guidance, tailored to your unique situation.
                                 </p>
                                 <div className="flex justify-center my-4">
                                     <Link to="/get-demo" className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-xl">
