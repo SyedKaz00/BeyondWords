@@ -120,51 +120,8 @@ const DemoProduct = (props) => {
                     <form onSubmit={sendEmail} id="demoProductForm">
                         <div className="w-full bg-white p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
                             <div className="flex">
-                                <h1 className="font-bold text-center lg:text-left text-blue-900 uppercase text-4xl">Demo our products</h1>
+                                <h1 className="font-bold text-center lg:text-left text-blue-900 uppercase text-4xl">Demo our service</h1>
                             </div>
-                            <div className="flex items-center my-4">
-                                <input 
-                                    id="checkbox-1" 
-                                    aria-describedby="checkbox-1" 
-                                    type="checkbox" 
-                                    className="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" 
-                                    value="business_management_system" onChange={handleChange}
-                                 />
-                                <label htmlFor="checkbox-1" className="ml-3 text-lg font-medium text-gray-900">Business Management System</label>
-                            </div>
-                            <div className="flex items-center my-4">
-                                <input 
-                                    id="checkbox-1" 
-                                    aria-describedby="checkbox-1" 
-                                    type="checkbox" 
-                                    className="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded"
-                                    value="school_management_portal" onChange={handleChange}
-                                    />
-                                <label htmlFor="checkbox-1" className="ml-3 text-lg font-medium text-gray-900">School Management Portal</label>
-                            </div>
-                            <div className="flex items-center my-4">
-                                <input 
-                                    id="checkbox-1" 
-                                    aria-describedby="checkbox-1" 
-                                    type="checkbox" 
-                                    className="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" 
-                                    value="payroll_management_system" onChange={handleChange}
-                                />
-                                <label htmlFor="checkbox-1" className="ml-3 text-lg font-medium text-gray-900">Payroll Management System</label>
-                            </div>
-                            <div className="flex items-center my-4">
-                                <input 
-                                    id="checkbox-1" 
-                                    aria-describedby="checkbox-1" 
-                                    type="checkbox" 
-                                    className="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded"
-                                    value="event_management_system" onChange={handleChange}
-                                />
-                                <label htmlFor="checkbox-1" className="ml-3 text-lg font-medium text-gray-900">Event Management System</label>
-                            </div>
-                            {errors && 
-                                <p className="text-red-500 text-sm">{errors.products}</p>
-                            }
 
                         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
                                 <div>
