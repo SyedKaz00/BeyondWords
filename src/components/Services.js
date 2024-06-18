@@ -68,7 +68,8 @@ const Services = () => {
                         </div>
                         <div className="lg:w-1/2 flex flex-col lg:mx-4 justify-center">
                             <div className='text-blue-900 mb-4'>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" className='fill-current'><path d="m7.375 16.781 1.25-1.562L4.601 12l4.024-3.219-1.25-1.562-5 4a1 1 0 0 0 0 1.562l5 4zm9.25-9.562-1.25 1.562L19.399 12l-4.024 3.219 1.25 1.562 5-4a1 1 0 0 0 0-1.562l-5-4zm-1.649-4.003-4 18-1.953-.434 4-18z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>                            
+
                             </div>
                             <h3 className="text-3xl  text-blue-900 font-bold">Safe and <span className='font-black'>Respectful</span>:</h3>
                             <div>
@@ -78,7 +79,9 @@ const Services = () => {
                         </div>
                         <div className="lg:w-1/2 flex flex-col lg:mx-4 justify-center">
                             <div className='text-blue-900 mb-4'>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" className='fill-current'><path d="m7.375 16.781 1.25-1.562L4.601 12l4.024-3.219-1.25-1.562-5 4a1 1 0 0 0 0 1.562l5 4zm9.25-9.562-1.25 1.562L19.399 12l-4.024 3.219 1.25 1.562 5-4a1 1 0 0 0 0-1.562l-5-4zm-1.649-4.003-4 18-1.953-.434 4-18z"></path></svg>
+
+                            </div>
                             <h3 className="text-3xl  text-blue-900 font-bold">Continuous<span className='font-black'> Improvement</span></h3>
                             <div>
                                 <p className='my-3 text-xl text-gray-600 font-semibold'>We constantly refine our AI to ensure the highest quality of interactions, based on your feedback and ongoing advancements in technology.</p>

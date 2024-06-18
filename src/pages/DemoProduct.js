@@ -3,10 +3,14 @@ import NavBar from '../components/Navbar/NavBar';
 import Footer from '../components/Footer';
 import {useDocTitle} from '../components/CustomHook';
 import axios from 'axios';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import Notiflix from 'notiflix';
 
 const DemoProduct = (props) => {
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
 
     useDocTitle('BeyondWords - Where Memories Speak')
 
@@ -40,10 +44,9 @@ const DemoProduct = (props) => {
         fData.append('email', email)
         fData.append('phone_number', phone)
         fData.append('message', message)
-        emailjs.init({
+        emailjs.sendForm('service_6rnhxs6', 'template_rcpkxfe', this, {
             publicKey: 'mpKYZSy4O35zFClac',
-          });
-        emailjs.sendForm('service_6rnhxs6', 'template_rcpkxfe', e.target)
+          })
           .then((result) => {
               console.log(result.text);
               Notiflix.Report.success(
@@ -211,11 +214,11 @@ const DemoProduct = (props) => {
 
                                 <div className="flex flex-col">
                                     <h2 className="text-2xl">Call Us</h2>
-                                    <p className="text-gray-400">Tel: 08055384406</p>
+                                    <p className="text-gray-400">Tel: +642102257600</p>
                                 
                                     <div className='mt-5'>
                                         <h2 className="text-2xl">Send an E-mail</h2>
-                                        <p className="text-gray-400">info@mld.ng</p>
+                                        <p className="text-gray-400">beyondwordsai@gmail.com</p>
                                     </div>
                             
                                 </div>
