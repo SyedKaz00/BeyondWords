@@ -63,42 +63,42 @@ const Contact = () => {
                 'Okay',
                 );
           });
-        axios({
-            method: "post",
-            url: process.env.REACT_APP_CONTACT_API,
-            data: fData,
-            headers: {
-                'Content-Type':  'multipart/form-data'
-            }
-        })
-        .then(function (response) {
-            document.getElementById('submitBtn').disabled = false;
-            document.getElementById('submitBtn').innerHTML = 'send message';
-            clearInput()
-            //handle success
-            Notiflix.Report.success(
-                'Success',
-                response.data.message,
-                'Okay',
-            );
-        })
-        .catch(function (error) {
-            document.getElementById('submitBtn').disabled = false;
-            document.getElementById('submitBtn').innerHTML = 'send message';
-            //handle error
-            const { response } = error;
-            if(response.status === 500) {
-                Notiflix.Report.failure(
-                    'An error occurred',
-                    response.data.message,
-                    'Okay',
-                );
-            }
-            if(response.data.errors !== null) {
-                setErrors(response.data.errors)
-            }
+        // axios({
+        //     method: "post",
+        //     url: process.env.REACT_APP_CONTACT_API,
+        //     data: fData,
+        //     headers: {
+        //         'Content-Type':  'multipart/form-data'
+        //     }
+        // })
+        // .then(function (response) {
+        //     document.getElementById('submitBtn').disabled = false;
+        //     document.getElementById('submitBtn').innerHTML = 'send message';
+        //     clearInput()
+        //     //handle success
+        //     Notiflix.Report.success(
+        //         'Success',
+        //         response.data.message,
+        //         'Okay',
+        //     );
+        // })
+        // .catch(function (error) {
+        //     document.getElementById('submitBtn').disabled = false;
+        //     document.getElementById('submitBtn').innerHTML = 'send message';
+        //     //handle error
+        //     const { response } = error;
+        //     if(response.status === 500) {
+        //         Notiflix.Report.failure(
+        //             'An error occurred',
+        //             response.data.message,
+        //             'Okay',
+        //         );
+        //     }
+        //     if(response.data.errors !== null) {
+        //         setErrors(response.data.errors)
+        //     }
             
-        });
+        // });
     }
     return (
         <>
