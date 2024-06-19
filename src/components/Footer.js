@@ -91,7 +91,7 @@ const Footer = () => {
                         to="#"
                         className=" hover:text-gray-900"
                     >
-                        Molad e Konsult
+                       Syed A A Kazmi
                     </HashLink>. All rights reserved.
                     </div>
                 </div>
