@@ -3,7 +3,6 @@ import NavBar from '../components/Navbar/NavBar';
 import Footer from '../components/Footer';
 import {useDocTitle} from '../components/CustomHook';
 //import axios from 'axios';
-import emailjs from '@emailjs/browser';
 import Notiflix from 'notiflix';
 
 const Contact = () => {
@@ -20,7 +19,6 @@ const Contact = () => {
     const [message, setMessage] = useState('')
     const [errors, setErrors] = useState([])
     
-    
 
 
     const clearErrors = () => {
@@ -35,7 +33,7 @@ const Contact = () => {
     //     setMessage('')
     // }
 
-    const sendEmail = (e) => {
+    const sendEmail = async (e) => {
         e.preventDefault();
         document.getElementById('submitBtn').disabled = true;
         document.getElementById('submitBtn').innerHTML = 'Loading...';
@@ -45,60 +43,35 @@ const Contact = () => {
         fData.append('email', email)
         fData.append('phone_number', phone)
         fData.append('message', message)
-        emailjs.sendForm('service_6rnhxs6', 'template_rcpkxfe', this, {
-            publicKey: 'mpKYZSy4O35zFClac',
-          })
-          .then((result) => {
-              console.log(result.text);
-              Notiflix.Report.success(
+        fData.append("access_key", "800d5969-6602-4afb-a363-337fdf83f9f2");
+  
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          body: fData
+        });
+    
+        const data = await response.json();
+    
+        if (data.success) {
+          e.target.reset();
+            document.getElementById('submitBtn').disabled = false;
+            document.getElementById('submitBtn').innerHTML = 'send message';
+            //handle success
+            Notiflix.Report.success(
                 'Success',
-                '"Thanks for sending a message, we\'ll be in touch soon."',
+                response.data.message,
                 'Okay',
-                );
-          }, (error) => {
-              console.log(error.text);
+            );
+        } else {
+            document.getElementById('submitBtn').disabled = false;
+            document.getElementById('submitBtn').innerHTML = 'send message';
+          console.log("Error", data);
               Notiflix.Report.failure(
                 'An error occured',
                 'Please try sending the message again.',
                 'Okay',
                 );
-          });
-        // axios({
-        //     method: "post",
-        //     url: process.env.REACT_APP_CONTACT_API,
-        //     data: fData,
-        //     headers: {
-        //         'Content-Type':  'multipart/form-data'
-        //     }
-        // })
-        // .then(function (response) {
-        //     document.getElementById('submitBtn').disabled = false;
-        //     document.getElementById('submitBtn').innerHTML = 'send message';
-        //     clearInput()
-        //     //handle success
-        //     Notiflix.Report.success(
-        //         'Success',
-        //         response.data.message,
-        //         'Okay',
-        //     );
-        // })
-        // .catch(function (error) {
-        //     document.getElementById('submitBtn').disabled = false;
-        //     document.getElementById('submitBtn').innerHTML = 'send message';
-        //     //handle error
-        //     const { response } = error;
-        //     if(response.status === 500) {
-        //         Notiflix.Report.failure(
-        //             'An error occurred',
-        //             response.data.message,
-        //             'Okay',
-        //         );
-        //     }
-        //     if(response.data.errors !== null) {
-        //         setErrors(response.data.errors)
-        //     }
-            
-        // });
+        }
     }
     return (
         <>
@@ -247,3 +220,4 @@ const Contact = () => {
 }
 
 export default Contact;
+
