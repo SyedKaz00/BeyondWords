@@ -59,8 +59,7 @@ const DemoProduct = (props) => {
             //handle success
             Notiflix.Report.success(
                 'Success',
-                response.data.message,
-                'Okay',
+                'Message Sent Successfully',
             );
         } else {
             document.getElementById('submitBtn').disabled = false;
